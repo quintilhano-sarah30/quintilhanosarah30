@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah | Sobre</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estrutura do Circuito / Linha do Tempo */
+        .timeline-circuit {
+            position: relative;
+            margin: 40px 0;
+            padding-left: 30px;
+        }
+
+        /* A linha pontilhada da pista */
+        .timeline-circuit::before {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            border-left: 2px dashed var(--ferrari-red);
+            opacity: 0.4;
+        }
+
+        .timeline-node {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        /* O ponto/curva no circuito */
+        .timeline-node::before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--bg-page);
+            border: 3px solid var(--accent-pink);
+            z-index: 2;
+            transition: background 0.3s;
+        }
+
+        .timeline-node:hover::before {
+            background: var(--ferrari-red);
+        }
+
+        .timeline-meta {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-pink);
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">SARAH .</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html" class="active">Sobre</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="academico.html">Acadêmico</a></li>
+            <li><a href="diario.html">Diário</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="engenharia.html">Engenharia</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Trajetória & <span>Circuito</span></h1>
+        <p style="color: var(--text-muted); font-style: italic; margin-bottom: 20px;">Cada etapa, uma evolução na pista do conhecimento.</p>
+
+        <div class="timeline-circuit">
+            <!-- Ponto 1 -->
+            <div class="timeline-node">
+                <div class="timeline-meta">Grid de Largada • Formação Base</div>
+                <div class="editorial-card">
+                    <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 8px;">CEDUP Hermann Hering</h3>
+                    <p>Cursando o <strong>2º ano de Desenvolvimento de Sistemas (DS)</strong>. É aqui que construo a base dos meus algoritmos, lógica estruturada e engenharia de software.</p>
+                </div>
+            </div>
+
+            <!-- Ponto 2 -->
+            <div class="timeline-node">
+                <div class="timeline-meta">Setor 1 • Prática de Mercado</div>
+                <div class="editorial-card" style="border-left-color: var(--text-dark);">
+                    <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 8px;">Marketing Digital na Prática</h3>
+                    <p>Atuo diretamente no setor de marketing da empresa da minha família, a <strong>Quintilhano’s</strong>. Sem especializações acadêmicas formais prévias na área, uso o mercado real como laboratório diário para posicionamento de marca e growth.</p>
+                </div>
+            </div>
+
+            <!-- Ponto 3 -->
+            <div class="timeline-node">
+                <div class="timeline-meta">Setor 2 • Desenvolvimento</div>
+                <div class="editorial-card" style="border-left-color: var(--accent-blue);">
+                    <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 8px;">Desenvolvedora Júnior Interna</h3>
+                    <p>Aplico os conceitos de programação aprendidos para criar ferramentas digitais e sistemas que melhoram os processos internos da <strong>Quintilhano's</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pista de fundo com o bólido -->
+    <div class="background-circuit">
+        <svg class="running-car" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="2" width="2" height="8" rx="0.5" fill="#202020"/><path d="M2 4C2 3.44772 2.44772 3 3 3H15C18 3 20 5 23 6C20 7 18 9 15 9H3C2.44772 9 2 8.55228 2 8V4Z" fill="#b82c37"/><circle cx="11" cy="6" r="1.8" fill="#fff"/><rect x="4" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="4" y="10" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="10" width="3" height="2" rx="0.5" fill="#111"/>
+        </svg>
+    </div>
+
+</body>
+</html>
