@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah | Skills</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo Telemetria Paddock */
+        .telemetry-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media(min-width: 650px) {
+            .telemetry-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        .telemetry-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(0,0,0,0.03);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .telemetry-card:hover {
+            border-color: var(--accent-pink);
+            box-shadow: 0 10px 30px rgba(229, 155, 177, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .telemetry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .system-status {
+            font-size: 0.7rem;
+            background: var(--ferrari-yellow);
+            color: #50441a;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">SARAH .</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="academico.html">Acadêmico</a></li>
+            <li><a href="diario.html">Diário</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="engenharia.html">Engenharia</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Painel de <span>Telemetria</span></h1>
+        <p style="color: var(--text-muted); font-style: italic; margin-bottom: 25px;">Mapeamento técnico e controle das tecnologias de desenvolvimento.</p>
+
+        <div class="telemetry-grid">
+            <!-- Bloco 1 -->
+            <div class="telemetry-card">
+                <div class="telemetry-header">
+                    <h3 style="font-family: var(--font-title); font-size: 1.2rem;">Lógica & Fundamentos</h3>
+                    <span class="system-status">Estável</span>
+                </div>
+                <div class="tag-container">
+                    <span class="pill">Portugol</span>
+                    <span class="pill">Pascal</span>
+                </div>
+            </div>
+
+            <!-- Bloco 2 -->
+            <div class="telemetry-card">
+                <div class="telemetry-header">
+                    <h3 style="font-family: var(--font-title); font-size: 1.2rem;">Front-End Moderno</h3>
+                    <span class="system-status" style="background: var(--accent-blue); color: #20343a;">Ativo</span>
+                </div>
+                <div class="tag-container">
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">JavaScript</span>
+                </div>
+            </div>
+
+            <!-- Bloco 3 -->
+            <div class="telemetry-card" style="grid-column: 1 / -1;">
+                <div class="telemetry-header">
+                    <h3 style="font-family: var(--font-title); font-size: 1.2rem;">Motores Back-End & Engenharia de Dados</h3>
+                    <span class="system-status" style="background: var(--accent-pink); color: #fff;">Compilando</span>
+                </div>
+                <div class="tag-container">
+                    <span class="pill">Python</span>
+                    <span class="pill">PHP</span>
+                    <span class="pill">Java</span>
+                    <span class="pill">C#</span>
+                    <span class="pill">C++</span>
+                    <span class="pill">SQL</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pista de fundo com o bólido -->
+    <div class="background-circuit">
+        <svg class="running-car" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="2" width="2" height="8" rx="0.5" fill="#202020"/><path d="M2 4C2 3.44772 2.44772 3 3 3H15C18 3 20 5 23 6C20 7 18 9 15 9H3C2.44772 9 2 8.55228 2 8V4Z" fill="#b82c37"/><circle cx="11" cy="6" r="1.8" fill="#fff"/><rect x="4" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="4" y="10" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="10" width="3" height="2" rx="0.5" fill="#111"/>
+        </svg>
+    </div>
+
+</body>
+</html>
