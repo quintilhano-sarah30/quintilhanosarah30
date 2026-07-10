@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah | Diário</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .radio-transmission {
+            border-left: 2px dashed var(--accent-pink);
+            padding-left: 25px;
+            margin-top: 30px;
+        }
+        .transmission-bubble {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 0 16px 16px 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+            position: relative;
+        }
+        .transmission-bubble::before {
+            content: '';
+            position: absolute;
+            left: -10px; top: 0;
+            width: 0; height: 0;
+            border-style: solid;
+            border-width: 0 10px 10px 0;
+            border-color: transparent #ffffff transparent transparent;
+        }
+        .radio-meta {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--ferrari-red);
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">SARAH .</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="engenharia.html">Engenharia</a></li>
+            <li><a href="academico.html">Acadêmico</a></li>
+            <li><a href="diario.html" class="active">Diário</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Rádio do <span>Paddock</span></h1>
+        <p style="color: var(--text-muted); font-style: italic;">Notas diárias e loops de aprendizado técnico direto do cockpit. (Apenas leitura para espectadores externos).</p>
+        
+        <div class="radio-transmission">
+            <!-- Entrada 02 -->
+            <div class="transmission-bubble">
+                <div class="radio-meta">🎙️ Transmissão #02 • 10 de Julho de 2026</div>
+                <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 8px;">Sincronia Estética da Carenagem</h3>
+                <p>Finalizei a refatoração do portfólio acoplando os motores de estilo nativos do CSS para rodar a animação horizontal do bólido e a renderização do novo layout em formato de abas. O resultado visual limpo mantém a velocidade máxima de renderização sem quebrar em telas menores.</p>
+            </div>
+
+            <!-- Entrada 01 -->
+            <div class="transmission-bubble">
+                <div class="radio-meta">🎙️ Transmissão #01 • 08 de Julho de 2026</div>
+                <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 8px;">Sessões de Alinhamento com IA</h3>
+                <p>Traçamos as primeiras especificações de design e comportamento para o site oficial da Quintilhano's com a Bárbara Karoliny. Analisar como aplicar a automação e lógica de dados em uma vitrine limpa de marketing é um excelente exercício prático.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pista de fundo -->
+    <div class="background-circuit">
+        <svg class="running-car" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="2" width="2" height="8" rx="0.5" fill="#202020"/><path d="M2 4C2 3.44772 2.44772 3 3 3H15C18 3 20 5 23 6C20 7 18 9 15 9H3C2.44772 9 2 8.55228 2 8V4Z" fill="#b82c37"/><circle cx="11" cy="6" r="1.8" fill="#fff"/><rect x="4" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="4" y="10" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="10" width="3" height="2" rx="0.5" fill="#111"/></svg>
+    </div>
+
+</body>
+</html>
