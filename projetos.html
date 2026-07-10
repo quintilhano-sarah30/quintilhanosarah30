@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah | Projetos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilo Garagem de Projetos / Ficha Técnica */
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .specs-table td {
+            padding: 8px 12px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+        }
+
+        .specs-table td:first-child {
+            font-weight: 600;
+            color: var(--text-muted);
+            width: 35%;
+        }
+
+        .project-status-badge {
+            display: inline-block;
+            font-size: 0.75rem;
+            background: var(--ferrari-yellow);
+            color: #4a3b05;
+            padding: 2px 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">SARAH .</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projetos.html" class="active">Projetos</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="academico.html">Acadêmico</a></li>
+            <li><a href="diario.html">Diário</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="engenharia.html">Engenharia</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Projetos & <span>Desenvolvimento</span></h1>
+        <p style="color: var(--text-muted); font-style: italic; margin-bottom: 30px;">O desenvolvimento prático e a arquitetura das soluções da Quintilhano’s.</p>
+        
+        <!-- Projeto 01: Site Quintilhano's -->
+        <div class="editorial-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
+                <h3 style="font-family: var(--font-title); font-size: 1.5rem;">🌐 Site Institucional Quintilhano’s</h3>
+                <span class="project-status-badge" style="background: var(--accent-blue); color: #20343a;">Na Pista</span>
+            </div>
+            <div class="scuderia-partnership">
+    <span class="scuderia-dot"></span>
+    Sarah x Bárbara Karoliny AI Integration
+</div>
+            <p style="margin-top: 10px;">Desenvolvimento completo da nova presença digital da empresa familiar, projetado e estruturado focando em uma interface de alta conversão visual e design responsivo.</p>
+            
+            <table class="specs-table">
+                <tr>
+                    <td>Colaboração</td>
+                    <td>Bárbara Karoliny (Especialista em IA)</td>
+                </tr>
+                <tr>
+                    <td>Stack Principal</td>
+                    <td>HTML5, CSS3, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Foco Estratégico</td>
+                    <td>Marketing Digital & Captação de Leads</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Projeto 02: ContechQuintilhano's -->
+        <div class="editorial-card" style="border-left-color: var(--text-dark); margin-top: 30px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
+                <h3 style="font-family: var(--font-title); font-size: 1.5rem;">📊 ContechQuintilhano’s</h3>
+                <span class="project-status-badge">Ajuste de Box</span>
+            </div>
+            <p style="margin-top: 10px;">Ecossistema de ferramentas internas focadas em trazer automação e otimização para a coleta de métricas de marketing da empresa familiar.</p>
+            
+            <table class="specs-table">
+                <tr>
+                    <td>Desenvolvimento</td>
+                    <td>Sarah (Dev Júnior / Marketing)</td>
+                </tr>
+                <tr>
+                    <td>Motores</td>
+                    <td>Python, SQL, PHP</td>
+                </tr>
+                <tr>
+                    <td>Objetivo</td>
+                    <td>Inteligência Operacional Interna</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <!-- Pista de fundo com o bólido -->
+    <div class="background-circuit">
+        <svg class="running-car" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="2" width="2" height="8" rx="0.5" fill="#202020"/><path d="M2 4C2 3.44772 2.44772 3 3 3H15C18 3 20 5 23 6C20 7 18 9 15 9H3C2.44772 9 2 8.55228 2 8V4Z" fill="#b82c37"/><circle cx="11" cy="6" r="1.8" fill="#fff"/><rect x="4" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="4" y="10" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="10" width="3" height="2" rx="0.5" fill="#111"/>
+        </svg>
+    </div>
+
+</body>
+</html>
