@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah | Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Plus+Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        .finish-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .flag-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ffffff;
+            padding: 22px 30px;
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            border: 1px solid rgba(0, 0, 0, 0.02);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.01);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .flag-link:hover {
+            background: var(--accent-pink);
+            color: #ffffff;
+            transform: translateX(8px);
+            border-color: transparent;
+        }
+        .flag-icon {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">SARAH .</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="livros.html">Livros</a></li>
+            <li><a href="engenharia.html">Engenharia</a></li>
+            <li><a href="academico.html">Acadêmico</a></li>
+            <li><a href="diario.html">Diário</a></li>
+            <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Bandeira de <span>Chegada</span></h1>
+        <p style="color: var(--text-muted); font-style: italic;">Conecte-se comigo na reta final para acelerar novas soluções e parcerias estratégicas.</p>
+        
+        <div class="finish-grid">
+            <!-- GitHub -->
+            <a href="https://github.com" class="flag-link" target="_blank">
+                <span style="font-family: var(--font-title); font-size: 1.25rem;">🏎️ Repositórios e Códigos (GitHub)</span>
+                <span class="flag-icon">Acessar Pista →</span>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" class="flag-link" target="_blank">
+                <span style="font-family: var(--font-title); font-size: 1.25rem;">📸 Presença Digital (Instagram)</span>
+                <span class="flag-icon">Seguir Perfil →</span>
+            </a>
+
+            <!-- Quintilhanos -->
+            <a href="#" class="flag-link" target="_blank" style="border-left: 5px solid var(--ferrari-red);">
+                <span style="font-family: var(--font-title); font-size: 1.25rem;">🏢 Quintilhano’s Forros e Divisórias</span>
+                <span class="flag-icon">Visitar Site →</span>
+            </a>
+
+            <!-- E-mail -->
+            <a href="mailto:seu-email@gmail.com" class="flag-link">
+                <span style="font-family: var(--font-title); font-size: 1.25rem;">✉️ Linha Direta (E-mail)</span>
+                <span class="flag-icon">Enviar Mensagem →</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Pista de fundo -->
+    <div class="background-circuit">
+        <svg class="running-car" viewBox="0 0 24 12" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="2" width="2" height="8" rx="0.5" fill="#202020"/><path d="M2 4C2 3.44772 2.44772 3 3 3H15C18 3 20 5 23 6C20 7 18 9 15 9H3C2.44772 9 2 8.55228 2 8V4Z" fill="#b82c37"/><circle cx="11" cy="6" r="1.8" fill="#fff"/><rect x="4" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="4" y="10" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="0" width="3" height="2" rx="0.5" fill="#111"/><rect x="15" y="10" width="3" height="2" rx="0.5" fill="#111"/></svg>
+    </div>
+
+</body>
+</html>
